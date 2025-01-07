@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATM Simulation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>ATM Simulation</h1>
+    <h6>khaled ibrahim</h6>
+    <label id="passworddd"><h3>Enter Password:</h3></label>
+    <div id="atmContainer">
+      <label for="password">Enter your password:</label>
+      <input type="password" id="password">
+      <button onclick="authenticate()">Enter</button>
+    </div>
+    <div id="operations" style="display: none;">
+      <button onclick="withdraw()">Withdraw</button>
+      <button onclick="deposit()">Deposit</button>
+      <button onclick="showBalance()">Show Balance</button>
+      <button onclick="exit()">Exit</button>
+    </div>
+    <div id="output" class="output"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
